@@ -18,4 +18,24 @@ document.addEventListener('DOMContentLoaded', () => {
     })
    
 });
+
+class SzazLabu{
+    constructor(labakSzama){
+        this.#labakSzama = labakSzama;
+    }
+
+    toString(){
+        return this.labakSzama + " labú százlábú"
+    }
+}
+
+const lista = [];
+function SzazlabuFuggveny(szam){
+    let szazlabu = new SzazLabu(szam);
+    lista.push(szazlabu);
+    return szazlabu
+}
+
+console.log(SzazlabuFuggveny(100).toString());
+
 //console.log(tombkiir(randomTomb));
