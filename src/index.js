@@ -6,7 +6,11 @@ tomb.push(array.filter(array => array % 5 == 0))
 return tomb;
 
 }
-console.log(tombkiir(randomTomb));
-//document.addEventListener('DOMContentLoaded', () => {
-  //  console.log(t);
-//})
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('gomb').addEventListener('click', () => {
+        console.log(tombkiir(randomTomb));
+    });
+   
+});
+//console.log(tombkiir(randomTomb));
